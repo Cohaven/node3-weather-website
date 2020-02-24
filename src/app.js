@@ -24,14 +24,14 @@ app.use(express.static(publicDirPath))
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Artemy M'
+        name: 'Artemy Matvienko'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Artemy M'
+        name: 'Artemy Matvienko'
     })
 })
 
@@ -39,7 +39,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         text: 'helpful text',
-        name: 'Artemy M'
+        name: 'Artemy Matvienko'
     })
 })
 
@@ -89,7 +89,7 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
         error: 'help article not found',
-        name: 'Artemy M'
+        name: 'Artemy Matvienko'
     })
 })
 
@@ -97,7 +97,7 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         error: 'page not found',
-        name: 'Artemy M'
+        name: 'Artemy Matvienko'
     })
 })
 
